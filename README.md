@@ -5,7 +5,12 @@ for durable agent messages and tasks:
 
 ```sh
 brew install youssef-tharwat/tap/agent-mail
+npx skills add youssef-tharwat/agent-mail --skill agent-mail -g
 ```
+
+The Agent Mail skill is required in every participating agent client. The skill
+installer uses Node/npm; [manual installation](https://github.com/youssef-tharwat/agent-mail/blob/main/docs/usage.md#agent-skill)
+is also supported. Homebrew installs the CLI.
 
 Uses prebuilt macOS and Linux binaries for ARM64 and x86-64, verified by SHA-256.
 No Cargo or Rust compiler is required. macOS requires 14+; Linux requires glibc 2.35 or newer.
