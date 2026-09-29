@@ -11,12 +11,13 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
-      - uses: Homebrew/actions/setup-homebrew@master
+      - uses: Homebrew/actions/setup-homebrew@e99025eb970cfa124b8284a35463d87426917478
+        with:
+          stable: true
       - name: Install the checked-out formula
         env:
           HOMEBREW_NO_AUTO_UPDATE: '1'
           HOMEBREW_NO_INSTALL_CLEANUP: '1'
         run: |
-          brew tap --custom-remote youssef-tharwat/tap "$GITHUB_WORKSPACE"
           brew install youssef-tharwat/tap/agent-mail
           brew test youssef-tharwat/tap/agent-mail
