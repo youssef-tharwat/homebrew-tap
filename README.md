@@ -31,7 +31,7 @@ remove Mail state.
 After all four Agent Mail release archives and checksums have been published:
 
 ```sh
-python3 scripts/update-agent-mail.py v0.4.0
+python3 scripts/update-agent-mail.py v0.5.1
 brew style Formula/agent-mail.rb
 brew install youssef-tharwat/tap/agent-mail
 brew test youssef-tharwat/tap/agent-mail
