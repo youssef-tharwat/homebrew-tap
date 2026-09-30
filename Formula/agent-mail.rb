@@ -1,32 +1,32 @@
 class AgentMail < Formula
   desc "Durable tasks and messages for coding agents"
   homepage "https://github.com/youssef-tharwat/agent-mail"
-  version "0.6.0"
+  version "0.7.0"
   license "MIT"
 
   on_macos do
     depends_on macos: :sonoma
 
     on_arm do
-      url "https://github.com/youssef-tharwat/agent-mail/releases/download/v0.6.0/agent-mail-v0.6.0-aarch64-apple-darwin.tar.gz"
-      sha256 "4b6e50a5a530e70c9e316543240f15f7aa46d9bcd8dc15a17b991039b5588ecf"
+      url "https://github.com/youssef-tharwat/agent-mail/releases/download/v0.7.0/agent-mail-v0.7.0-aarch64-apple-darwin.tar.gz"
+      sha256 "64affb3a6982b7ffbef89763c5755a79480cc11059de797f0a70e7242dbfdeb5"
     end
 
     on_intel do
-      url "https://github.com/youssef-tharwat/agent-mail/releases/download/v0.6.0/agent-mail-v0.6.0-x86_64-apple-darwin.tar.gz"
-      sha256 "feb34b70da2a61e3e3e4a393a0dc786bfa0e7129f2c907e89cc797e49fdc2375"
+      url "https://github.com/youssef-tharwat/agent-mail/releases/download/v0.7.0/agent-mail-v0.7.0-x86_64-apple-darwin.tar.gz"
+      sha256 "5aaae51ba606873e082d2b801fd95e40d39134ea43b1df92d717b361a13345e0"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/youssef-tharwat/agent-mail/releases/download/v0.6.0/agent-mail-v0.6.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "f5e45a4a72ebf75e9dcdd99446751cf70b14eee6768b737c5689ba5b394a97ef"
+      url "https://github.com/youssef-tharwat/agent-mail/releases/download/v0.7.0/agent-mail-v0.7.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "c6cb11d22f9e2da07b507b30c787ababfe2fef5d79ba503872df817cc454bae9"
     end
 
     on_intel do
-      url "https://github.com/youssef-tharwat/agent-mail/releases/download/v0.6.0/agent-mail-v0.6.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "8b27e76d43bb5d3af85c1a85678421ca049ae6671a5226bb474fc06a2fc3009f"
+      url "https://github.com/youssef-tharwat/agent-mail/releases/download/v0.7.0/agent-mail-v0.7.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "b5a307b4e896ad008e8b8b3bac01d1e1b01bfb84b36f594d9f5f86190126ab86"
     end
   end
 
